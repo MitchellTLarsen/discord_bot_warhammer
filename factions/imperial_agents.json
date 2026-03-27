@@ -1,0 +1,808 @@
+{
+  "faction": "Imperial Agents",
+  "faction_url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/",
+  "units": [
+    {
+      "id": "000004174",
+      "name": "Aquila Kill Team",
+      "options": [
+        [
+          5,
+          100
+        ],
+        [
+          10,
+          200
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Aquila-Kill-Team",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Aquila Kill Team",
+        "Gravis",
+        "Tacticus",
+        "Deathwatch",
+        "Retinue",
+        "Ordo Xenos",
+        "Battleline"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000000871",
+      "name": "Callidus Assassin",
+      "options": [
+        [
+          1,
+          100
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Callidus-Assassin",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Callidus Assassin",
+        "Officio Assassinorum"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003817",
+      "name": "Corvus Blackstar",
+      "options": [
+        [
+          1,
+          180
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Corvus-Blackstar",
+      "keywords": [
+        "Vehicle",
+        "Aircraft",
+        "Fly",
+        "Transport",
+        "Imperium",
+        "Corvus Blackstar",
+        "Ordo Xenos",
+        "Retinue",
+        "Deathwatch"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000000873",
+      "name": "Culexus Assassin",
+      "options": [
+        [
+          1,
+          85
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Culexus-Assassin",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Culexus Assassin",
+        "Officio Assassinorum",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003816",
+      "name": "Deathwatch Kill Team",
+      "options": [
+        [
+          5,
+          100
+        ],
+        [
+          10,
+          190
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Deathwatch-Kill-Team",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Deathwatch Kill Team",
+        "Deathwatch",
+        "Battleline",
+        "Retinue",
+        "Kill Team",
+        "Ordo Xenos"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000000872",
+      "name": "Eversor Assassin",
+      "options": [
+        [
+          1,
+          110
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Eversor-Assassin",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Eversor Assassin",
+        "Grenades",
+        "Officio Assassinorum"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000002685",
+      "name": "Exaction Squad",
+      "options": [
+        [
+          11,
+          90
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Exaction-Squad",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Exaction Squad",
+        "Adeptus Arbites",
+        "Retinue"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003813",
+      "name": "Grey Knights Terminator Squad",
+      "options": [
+        [
+          5,
+          190
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Grey-Knights-Terminator-Squad",
+      "keywords": [
+        "Infantry",
+        "Terminator",
+        "Psyker",
+        "Imperium",
+        "Grey Knights Terminator Squad",
+        "Grenades",
+        "Requisitioned",
+        "Ordo Malleus"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000002587",
+      "name": "Imperial Navy Breachers",
+      "options": [
+        [
+          10,
+          90
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Imperial-Navy-Breachers",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Imperial Navy Breachers",
+        "Battleline",
+        "Retinue",
+        "Smoke",
+        "Voidfarers"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003830",
+      "name": "Imperial Rhino",
+      "options": [
+        [
+          1,
+          75
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Imperial-Rhino",
+      "keywords": [
+        "Vehicle",
+        "Transport",
+        "Dedicated Transport",
+        "Smoke",
+        "Imperium",
+        "Imperial Rhino"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000000877",
+      "name": "Inquisitor",
+      "options": [
+        [
+          1,
+          55
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Inquisitor",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Inquisitor",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000000876",
+      "name": "Inquisitor Coteaz",
+      "options": [
+        [
+          1,
+          75
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Inquisitor-Coteaz",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Psyker",
+        "Imperium",
+        "Inquisitor Coteaz",
+        "Ordo Malleus",
+        "Inquisitor",
+        "Coteaz"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000002090",
+      "name": "Inquisitor Draxus",
+      "options": [
+        [
+          1,
+          75
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Inquisitor-Draxus",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Inquisitor Draxus",
+        "Psyker",
+        "Grenades",
+        "Ordo Xenos",
+        "Inquisitor",
+        "Draxus"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000000874",
+      "name": "Inquisitor Greyfax",
+      "options": [
+        [
+          1,
+          65
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Inquisitor-Greyfax",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Psyker",
+        "Imperium",
+        "Inquisitor Greyfax",
+        "Ordo Hereticus",
+        "Greyfax",
+        "Grenades",
+        "Inquisitor"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000002767",
+      "name": "Inquisitorial Agents",
+      "options": [
+        [
+          6,
+          50
+        ],
+        [
+          12,
+          100
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Inquisitorial-Agents",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Inquisitorial Agents",
+        "Grenades",
+        "Retinue"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003820",
+      "name": "Inquisitorial Chimera",
+      "options": [
+        [
+          1,
+          70
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Inquisitorial-Chimera",
+      "keywords": [
+        "Vehicle",
+        "Transport",
+        "Smoke",
+        "Imperium",
+        "Inquisitorial Chimera",
+        "Dedicated Transport"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003812",
+      "name": "Ministorum Priest",
+      "options": [
+        [
+          1,
+          40
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Ministorum-Priest",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Ministorum Priest",
+        "Ordo Hereticus"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000002765",
+      "name": "Navigator",
+      "options": [
+        [
+          1,
+          60
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Navigator",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Navigator",
+        "Voidfarers",
+        "Psyker"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000002762",
+      "name": "Rogue Trader Entourage",
+      "options": [
+        [
+          4,
+          75
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Rogue-Trader-Entourage",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Rogue Trader Entourage",
+        "Grenades",
+        "Voidfarers"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000004074",
+      "name": "Sanctifiers",
+      "options": [
+        [
+          9,
+          100
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Sanctifiers",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Sanctifiers",
+        "Retinue"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003819",
+      "name": "Sisters of Battle Immolator",
+      "options": [
+        [
+          1,
+          100
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Sisters-of-Battle-Immolator",
+      "keywords": [
+        "Vehicle",
+        "Transport",
+        "Smoke",
+        "Imperium",
+        "Sisters of Battle Immolator",
+        "Immolator",
+        "Dedicated Transport",
+        "Ordo Hereticus"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003818",
+      "name": "Sisters of Battle Squad",
+      "options": [
+        [
+          10,
+          100
+        ]
+      ],
+      "category": "battleline",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Sisters-of-Battle-Squad",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades",
+        "Imperium",
+        "Sisters of Battle Squad",
+        "Requisitioned",
+        "Ordo Hereticus"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000002684",
+      "name": "Subductor Squad",
+      "options": [
+        [
+          11,
+          85
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Subductor-Squad",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Subductor Squad",
+        "Adeptus Arbites",
+        "Retinue"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000002683",
+      "name": "Vigilant Squad",
+      "options": [
+        [
+          11,
+          85
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Vigilant-Squad",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Vigilant Squad",
+        "Battleline",
+        "Retinue",
+        "Adeptus Arbites"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000000870",
+      "name": "Vindicare Assassin",
+      "options": [
+        [
+          1,
+          110
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Vindicare-Assassin",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Vindicare Assassin",
+        "Smoke",
+        "Officio Assassinorum"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000002509",
+      "name": "Voidsmen-at-Arms",
+      "options": [
+        [
+          6,
+          50
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Voidsmen-at-Arms",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Voidsmen-at-Arms",
+        "Voidfarers",
+        "Retinue"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003814",
+      "name": "Watch Captain Artemis",
+      "options": [
+        [
+          1,
+          65
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Watch-Captain-Artemis",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Watch Captain Artemis",
+        "Deathwatch",
+        "Ordo Xenos",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    },
+    {
+      "id": "000003815",
+      "name": "Watch Master",
+      "options": [
+        [
+          1,
+          95
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/agents-of-the-imperium/Watch-Master",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Watch Master",
+        "Grenades",
+        "Ordo Xenos",
+        "Deathwatch"
+      ],
+      "faction_keywords": [
+        "Agents of the Imperium"
+      ]
+    }
+  ],
+  "detachments": [
+    {
+      "name": "Alien Hunters",
+      "enhancements": [
+        {
+          "name": "Amulet of Auto-chastisement",
+          "points": 25
+        },
+        {
+          "name": "Beacon Angelis",
+          "points": 30
+        },
+        {
+          "name": "Blackweave Shroud",
+          "points": 15
+        },
+        {
+          "name": "Universal Anathema",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "name": "Daemon Hunters",
+      "enhancements": [
+        {
+          "name": "Daemon Slayer",
+          "points": 10
+        },
+        {
+          "name": "Formidable Resolve",
+          "points": 5
+        },
+        {
+          "name": "Gift of the Prescient",
+          "points": 20
+        },
+        {
+          "name": "Grimoire of True Names",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "name": "Imperialis Fleet",
+      "enhancements": [
+        {
+          "name": "Clandestine Operation",
+          "points": 15
+        },
+        {
+          "name": "Combat Landers",
+          "points": 10
+        },
+        {
+          "name": "Digital Weapons",
+          "points": 10
+        },
+        {
+          "name": "Fleetmaster",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "name": "Purgation Force",
+      "enhancements": [
+        {
+          "name": "Ignis Judicium",
+          "points": 10
+        },
+        {
+          "name": "Liber Heresius",
+          "points": 10
+        },
+        {
+          "name": "No Escape",
+          "points": 25
+        },
+        {
+          "name": "Witch Hunter",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "name": "Veiled Blade Elimination Force",
+      "enhancements": [
+        {
+          "name": "Decoy Targets",
+          "points": 40
+        },
+        {
+          "name": "Esoteric Explosives",
+          "points": 40
+        },
+        {
+          "name": "Intraneural Biotech",
+          "points": 35
+        },
+        {
+          "name": "Micromelta Rounds",
+          "points": 45
+        }
+      ]
+    }
+  ]
+}

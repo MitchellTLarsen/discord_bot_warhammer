@@ -1,0 +1,1614 @@
+{
+  "faction": "Chaos Space Marines",
+  "faction_url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/",
+  "units": [
+    {
+      "id": "000000924",
+      "name": "Abaddon the Despoiler",
+      "options": [
+        [
+          1,
+          270
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Abaddon-the-Despoiler",
+      "keywords": [
+        "Character",
+        "Infantry",
+        "Abaddon the Despoiler",
+        "Chaos",
+        "Chaos Undivided",
+        "Terminator",
+        "Epic Hero"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000926",
+      "name": "Cypher",
+      "options": [
+        [
+          1,
+          90
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Cypher",
+      "keywords": [
+        "Character",
+        "Epic Hero",
+        "Chaos",
+        "Infantry",
+        "Fallen",
+        "Cypher"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000928",
+      "name": "Fabius Bile",
+      "options": [
+        [
+          2,
+          100
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Fabius-Bile",
+      "keywords": [
+        "Chaos",
+        "Infantry",
+        "Chaos Undivided",
+        "Character",
+        "Epic Hero",
+        "Fabius Bile"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000001556",
+      "name": "Haarken Worldclaimer",
+      "options": [
+        [
+          1,
+          90
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Haarken-Worldclaimer",
+      "keywords": [
+        "Haarken Worldclaimer",
+        "Jump Pack",
+        "Character",
+        "Epic Hero",
+        "Fly",
+        "Infantry",
+        "Chaos",
+        "Chaos Undivided"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000925",
+      "name": "Huron Blackheart",
+      "options": [
+        [
+          1,
+          120
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Huron-Blackheart",
+      "keywords": [
+        "Huron Blackheart",
+        "Chaos",
+        "Epic Hero",
+        "Character",
+        "Infantry",
+        "Chaos Undivided"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002679",
+      "name": "Vashtorr the Arkifane",
+      "options": [
+        [
+          1,
+          175
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Vashtorr-the-Arkifane",
+      "keywords": [
+        "Daemon",
+        "Vashtorr the Arkifane",
+        "Chaos",
+        "Monster",
+        "Character",
+        "Epic Hero",
+        "Fly"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000929",
+      "name": "Chaos Lord",
+      "options": [
+        [
+          1,
+          90
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Lord",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Character",
+        "Chaos",
+        "Chaos Lord"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000930",
+      "name": "Chaos Lord in Terminator Armour",
+      "options": [
+        [
+          1,
+          85
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Lord-in-Terminator-Armour",
+      "keywords": [
+        "Character",
+        "Chaos",
+        "Terminator",
+        "Chaos Lord in Terminator Armour",
+        "Infantry",
+        "Chaos Lord"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000003711",
+      "name": "Chaos Lord with Jump Pack",
+      "options": [
+        [
+          1,
+          80
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Lord-with-Jump-Pack",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Fly",
+        "Jump Pack",
+        "Chaos",
+        "Chaos Lord",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000003844",
+      "name": "Cultist Firebrand",
+      "options": [
+        [
+          1,
+          45
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Cultist-Firebrand",
+      "keywords": [
+        "Cultist Firebrand",
+        "Damned",
+        "Chaos",
+        "Character",
+        "Grenades",
+        "Infantry"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000936",
+      "name": "Dark Apostle",
+      "options": [
+        [
+          3,
+          65
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Dark-Apostle",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Chaos",
+        "Character",
+        "Dark Apostle"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000937",
+      "name": "Heretic Astartes Daemon Prince",
+      "options": [
+        [
+          1,
+          165
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Heretic-Astartes-Daemon-Prince",
+      "keywords": [
+        "Daemon Prince",
+        "Monster",
+        "Character",
+        "Chaos",
+        "Daemon"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002730",
+      "name": "Heretic Astartes Daemon Prince with Wings",
+      "options": [
+        [
+          1,
+          180
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Heretic-Astartes-Daemon-Prince-with-Wings",
+      "keywords": [
+        "Daemon Prince with Wings",
+        "Daemon",
+        "Monster",
+        "Fly",
+        "Character",
+        "Chaos"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000001583",
+      "name": "Lord Discordant on Helstalker",
+      "options": [
+        [
+          1,
+          160
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Lord-Discordant-on-Helstalker",
+      "keywords": [
+        "Lord Discordant",
+        "Daemon",
+        "Chaos",
+        "Character",
+        "Mounted"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002626",
+      "name": "Master of Executions",
+      "options": [
+        [
+          1,
+          80
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Master-of-Executions",
+      "keywords": [
+        "Chaos",
+        "Master of Executions",
+        "Grenades",
+        "Character",
+        "Infantry",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000001581",
+      "name": "Master of Possession",
+      "options": [
+        [
+          1,
+          60
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Master-of-Possession",
+      "keywords": [
+        "Character",
+        "Infantry",
+        "Master of Possession",
+        "Chaos",
+        "Psyker"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000004192",
+      "name": "Red Corsairs Reave-Captain",
+      "options": [
+        [
+          1,
+          75
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Red-Corsairs-Reave-Captain",
+      "keywords": [
+        "Red Corsairs Reave-captain",
+        "Chaos",
+        "Infantry",
+        "Character"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000001016",
+      "name": "Sorcerer",
+      "options": [
+        [
+          1,
+          60
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Sorcerer",
+      "keywords": [
+        "Grenades",
+        "Psyker",
+        "Chaos",
+        "Character",
+        "Infantry",
+        "Sorcerer",
+        "Tzeentch"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000001017",
+      "name": "Sorcerer in Terminator Armour",
+      "options": [
+        [
+          1,
+          80
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Sorcerer-in-Terminator-Armour",
+      "keywords": [
+        "Psyker",
+        "Sorcerer in Terminator Armour",
+        "Terminator",
+        "Infantry",
+        "Character",
+        "Chaos",
+        "Sorcerer",
+        "Tzeentch"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000944",
+      "name": "Warpsmith",
+      "options": [
+        [
+          1,
+          70
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Warpsmith",
+      "keywords": [
+        "Grenades",
+        "Infantry",
+        "Warpsmith",
+        "Chaos",
+        "Character"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000003849",
+      "name": "Cultist Mob",
+      "options": [
+        [
+          10,
+          50
+        ],
+        [
+          20,
+          100
+        ]
+      ],
+      "category": "battleline",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Cultist-Mob",
+      "keywords": [
+        "Damned",
+        "Chaos",
+        "Battleline",
+        "Cultist Mob",
+        "Infantry",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002570",
+      "name": "Legionaries",
+      "options": [
+        [
+          5,
+          90
+        ],
+        [
+          10,
+          170
+        ]
+      ],
+      "category": "battleline",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Legionaries",
+      "keywords": [
+        "Legionaries",
+        "Infantry",
+        "Battleline",
+        "Chaos",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000003853",
+      "name": "Traitor Guardsmen Squad",
+      "options": [
+        [
+          10,
+          70
+        ]
+      ],
+      "category": "battleline",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Traitor-Guardsmen-Squad",
+      "keywords": [
+        "Grenades",
+        "Infantry",
+        "Traitor Guardsmen Squad",
+        "Damned",
+        "Chaos"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000003851",
+      "name": "Accursed Cultists",
+      "options": [
+        [
+          8,
+          90
+        ],
+        [
+          16,
+          195
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Accursed-Cultists",
+      "keywords": [
+        "Infantry",
+        "Chaos",
+        "Damned",
+        "Accursed Cultists"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000957",
+      "name": "Chaos Bikers",
+      "options": [
+        [
+          3,
+          70
+        ],
+        [
+          6,
+          130
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Bikers",
+      "keywords": [
+        "Chaos Bikers",
+        "Chaos",
+        "Grenades",
+        "Mounted"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002634",
+      "name": "Chaos Land Raider",
+      "options": [
+        [
+          1,
+          220
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Land-Raider",
+      "keywords": [
+        "Vehicle",
+        "Transport",
+        "Smoke",
+        "Chaos",
+        "Land Raider",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002637",
+      "name": "Chaos Predator Annihilator",
+      "options": [
+        [
+          1,
+          135
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Predator-Annihilator",
+      "keywords": [
+        "Vehicle",
+        "Chaos",
+        "Predator Annihilator",
+        "Smoke",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002636",
+      "name": "Chaos Predator Destructor",
+      "options": [
+        [
+          1,
+          140
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Predator-Destructor",
+      "keywords": [
+        "Smoke",
+        "Vehicle",
+        "Chaos",
+        "Predator Destructor",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002640",
+      "name": "Chaos Rhino",
+      "options": [
+        [
+          1,
+          75
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Rhino",
+      "keywords": [
+        "Chaos",
+        "Smoke",
+        "Dedicated Transport",
+        "Transport",
+        "Rhino",
+        "Vehicle",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002633",
+      "name": "Chaos Spawn",
+      "options": [
+        [
+          2,
+          70
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Spawn",
+      "keywords": [
+        "Beast",
+        "Chaos",
+        "Chaos Spawn",
+        "Khorne",
+        "Spawn"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000947",
+      "name": "Chaos Terminator Squad",
+      "options": [
+        [
+          5,
+          180
+        ],
+        [
+          10,
+          360
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Terminator-Squad",
+      "keywords": [
+        "Infantry",
+        "Chaos",
+        "Terminator",
+        "Chaos Terminator Squad"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000001027",
+      "name": "Chaos Vindicator",
+      "options": [
+        [
+          1,
+          185
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chaos-Vindicator",
+      "keywords": [
+        "Vehicle",
+        "Smoke",
+        "Chaos",
+        "Vindicator",
+        "Tzeentch"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000952",
+      "name": "Chosen",
+      "options": [
+        [
+          5,
+          125
+        ],
+        [
+          10,
+          250
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Chosen",
+      "keywords": [
+        "Chosen",
+        "Infantry",
+        "Grenades",
+        "Chaos"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000003845",
+      "name": "Dark Commune",
+      "options": [
+        [
+          5,
+          90
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Dark-Commune",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Damned",
+        "Dark Commune",
+        "Psyker",
+        "Character",
+        "Cult Demagogue",
+        "Chaos"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002635",
+      "name": "Defiler",
+      "options": [
+        [
+          1,
+          190
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Defiler",
+      "keywords": [
+        "Walker",
+        "Vehicle",
+        "Chaos",
+        "Daemon",
+        "Defiler",
+        "Smoke",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000003852",
+      "name": "Fellgor Beastmen",
+      "options": [
+        [
+          10,
+          70
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Fellgor-Beastmen",
+      "keywords": [
+        "Fellgor Beastmen",
+        "Damned",
+        "Chaos",
+        "Grenades",
+        "Infantry"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002638",
+      "name": "Forgefiend",
+      "options": [
+        [
+          1,
+          170
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Forgefiend",
+      "keywords": [
+        "Forgefiend",
+        "Daemon",
+        "Chaos",
+        "Walker",
+        "Vehicle",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000966",
+      "name": "Havocs",
+      "options": [
+        [
+          5,
+          125
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Havocs",
+      "keywords": [
+        "Chaos",
+        "Infantry",
+        "Havocs"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002632",
+      "name": "Helbrute",
+      "options": [
+        [
+          1,
+          130
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Helbrute",
+      "keywords": [
+        "Walker",
+        "Vehicle",
+        "Chaos",
+        "Helbrute",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002641",
+      "name": "Heldrake",
+      "options": [
+        [
+          1,
+          205
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Heldrake",
+      "keywords": [
+        "Vehicle",
+        "Heldrake",
+        "Daemon",
+        "Chaos",
+        "Aircraft",
+        "Fly",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002642",
+      "name": "Khorne Lord of Skulls",
+      "options": [
+        [
+          1,
+          450
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Khorne-Lord-of-Skulls",
+      "keywords": [
+        "Titanic",
+        "Vehicle",
+        "Lord of Skulls",
+        "Daemon",
+        "Khorne",
+        "Chaos",
+        "Towering"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000004190",
+      "name": "Masters of the Maelstrom",
+      "options": [
+        [
+          5,
+          115
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Masters-of-the-Maelstrom",
+      "keywords": [
+        "Infantry",
+        "Epic Hero",
+        "Grenades",
+        "Chaos Undivided",
+        "Masters of the Maelstrom",
+        "Psyker",
+        "Chaos"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002639",
+      "name": "Maulerfiend",
+      "options": [
+        [
+          1,
+          130
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Maulerfiend",
+      "keywords": [
+        "Maulerfiend",
+        "Chaos",
+        "Walker",
+        "Vehicle",
+        "Daemon",
+        "Khorne"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000003876",
+      "name": "Nemesis Claw",
+      "options": [
+        [
+          5,
+          110
+        ],
+        [
+          10,
+          190
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Nemesis-Claw",
+      "keywords": [
+        "Infantry",
+        "Psyker",
+        "Chaos",
+        "Grenades",
+        "Nemesis Claw"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000001587",
+      "name": "Noctilith Crown",
+      "options": [
+        [
+          1,
+          125
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Noctilith-Crown",
+      "keywords": [
+        "Noctilith Crown",
+        "Chaos",
+        "Fortification"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000965",
+      "name": "Obliterators",
+      "options": [
+        [
+          2,
+          160
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Obliterators",
+      "keywords": [
+        "Obliterators",
+        "Infantry",
+        "Daemon",
+        "Chaos"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000953",
+      "name": "Possessed",
+      "options": [
+        [
+          5,
+          120
+        ],
+        [
+          10,
+          240
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Possessed",
+      "keywords": [
+        "Possessed",
+        "Daemon",
+        "Chaos",
+        "Infantry"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000958",
+      "name": "Raptors",
+      "options": [
+        [
+          5,
+          110
+        ],
+        [
+          10,
+          210
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Raptors",
+      "keywords": [
+        "Raptors",
+        "Chaos",
+        "Grenades",
+        "Jump Packs",
+        "Fly",
+        "Infantry"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000004191",
+      "name": "Red Corsairs Raiders",
+      "options": [
+        [
+          5,
+          110
+        ],
+        [
+          10,
+          220
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Red-Corsairs-Raiders",
+      "keywords": [
+        "Red Corsairs Raiders",
+        "Infantry",
+        "Grenades",
+        "Chaos"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000003846",
+      "name": "Traitor Enforcer",
+      "options": [
+        [
+          2,
+          55
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Traitor-Enforcer",
+      "keywords": [
+        "Traitor Enforcer",
+        "Character",
+        "Damned",
+        "Chaos",
+        "Infantry",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000001586",
+      "name": "Venomcrawler",
+      "options": [
+        [
+          1,
+          110
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Venomcrawler",
+      "keywords": [
+        "Daemon",
+        "Venomcrawler",
+        "Vehicle",
+        "Walker",
+        "Chaos"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000000959",
+      "name": "Warp Talons",
+      "options": [
+        [
+          5,
+          125
+        ],
+        [
+          10,
+          270
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/chaos-space-marines/Warp-Talons",
+      "keywords": [
+        "Jump Packs",
+        "Fly",
+        "Infantry",
+        "Chaos",
+        "Daemon",
+        "Warp Talons",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Heretic Astartes"
+      ]
+    },
+    {
+      "id": "000002627",
+      "name": "Khorne Berzerkers",
+      "options": [
+        [
+          10,
+          180
+        ],
+        [
+          20,
+          360
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/world-eaters/Khorne-Berzerkers",
+      "keywords": [
+        "Infantry",
+        "Chaos",
+        "Khorne",
+        "Khorne Berzerkers",
+        "Battleline",
+        "Berzerkers",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Cult Marines"
+      ]
+    },
+    {
+      "id": "000004088",
+      "name": "Noise Marines",
+      "options": [
+        [
+          6,
+          145
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/emperors-children/Noise-Marines",
+      "keywords": [
+        "Infantry",
+        "Chaos",
+        "Slaanesh",
+        "Noise Marines"
+      ],
+      "faction_keywords": [
+        "Cult Marines"
+      ]
+    },
+    {
+      "id": "000001044",
+      "name": "Plague Marines",
+      "options": [
+        [
+          5,
+          95
+        ],
+        [
+          7,
+          130
+        ],
+        [
+          10,
+          190
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/death-guard/Plague-Marines",
+      "keywords": [
+        "Infantry",
+        "Chaos",
+        "Nurgle",
+        "Plague Marines",
+        "Battleline",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Cult Marines"
+      ]
+    },
+    {
+      "id": "000001020",
+      "name": "Rubric Marines",
+      "options": [
+        [
+          5,
+          100
+        ],
+        [
+          10,
+          190
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/thousand-sons/Rubric-Marines",
+      "keywords": [
+        "Infantry",
+        "Chaos",
+        "Tzeentch",
+        "Psyker",
+        "Rubric Marines",
+        "Rubricae",
+        "Battleline"
+      ],
+      "faction_keywords": [
+        "Cult Marines"
+      ]
+    }
+  ],
+  "detachments": [
+    {
+      "name": "Cabal of Chaos",
+      "enhancements": [
+        {
+          "name": "Eye of Z'desh",
+          "points": 25
+        },
+        {
+          "name": "Infernal Avatar",
+          "points": 20
+        },
+        {
+          "name": "Mind Blade",
+          "points": 25
+        },
+        {
+          "name": "Touched by the Warp",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "name": "Veterans of the Long War",
+      "enhancements": [
+        {
+          "name": "Eager for Vengeance",
+          "points": 20
+        },
+        {
+          "name": "Eye of Abaddon",
+          "points": 15
+        },
+        {
+          "name": "Mark of Legend",
+          "points": 10
+        },
+        {
+          "name": "Warmaster's Gift",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "name": "Chaos Cult",
+      "enhancements": [
+        {
+          "name": "Amulet of Tainted Vigour",
+          "points": 20
+        },
+        {
+          "name": "Cultist's Brand",
+          "points": 20
+        },
+        {
+          "name": "Incendiary Goad",
+          "points": 15
+        },
+        {
+          "name": "Warped Foresight",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "name": "Creations of Bile",
+      "enhancements": [
+        {
+          "name": "Helm of All-seeing",
+          "points": 25
+        },
+        {
+          "name": "Living Carapace",
+          "points": 15
+        },
+        {
+          "name": "Prime Test Subject",
+          "points": 35
+        },
+        {
+          "name": "Surgical Precision",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "name": "Deceptors",
+      "enhancements": [
+        {
+          "name": "Cursed Fang",
+          "points": 10
+        },
+        {
+          "name": "Falsehood",
+          "points": 10
+        },
+        {
+          "name": "Shroud of Obfuscation",
+          "points": 15
+        },
+        {
+          "name": "Soul Link",
+          "points": 5
+        }
+      ]
+    },
+    {
+      "name": "Dread Talons",
+      "enhancements": [
+        {
+          "name": "Eater of Dread",
+          "points": 15
+        },
+        {
+          "name": "Night's Shroud",
+          "points": 20
+        },
+        {
+          "name": "Warp-fuelled Thrusters",
+          "points": 20
+        },
+        {
+          "name": "Willbreaker",
+          "points": 10
+        }
+      ]
+    },
+    {
+      "name": "Fellhammer Siege-host",
+      "enhancements": [
+        {
+          "name": "Bastion Plate",
+          "points": 10
+        },
+        {
+          "name": "Iron Artifice",
+          "points": 10
+        },
+        {
+          "name": "Ironbound Enmity",
+          "points": 15
+        },
+        {
+          "name": "Warp Tracer",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "name": "Huron's Marauders",
+      "enhancements": [
+        {
+          "name": "Dread Reputation",
+          "points": 25
+        },
+        {
+          "name": "Eager for Bloodshed",
+          "points": 30
+        },
+        {
+          "name": "Raid Leader",
+          "points": 20
+        },
+        {
+          "name": "Voice of the Tyrant",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "name": "Nightmare Hunt",
+      "enhancements": [
+        {
+          "name": "Greyveil Hex",
+          "points": 25
+        },
+        {
+          "name": "Sorrowscent Vulture",
+          "points": 35
+        },
+        {
+          "name": "Terrorglut Parasite",
+          "points": 20
+        },
+        {
+          "name": "Warp-fuelled Thrusters",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "name": "Pactbound Zealots",
+      "enhancements": [
+        {
+          "name": "Eye of Tzeentch",
+          "points": 15
+        },
+        {
+          "name": "Intoxicating Elixir",
+          "points": 15
+        },
+        {
+          "name": "Orbs of Unlife",
+          "points": 15
+        },
+        {
+          "name": "Talisman of Burning Blood",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "name": "Renegade Raiders",
+      "enhancements": [
+        {
+          "name": "Despot's Claim",
+          "points": 15
+        },
+        {
+          "name": "Dread Reaver",
+          "points": 15
+        },
+        {
+          "name": "Mark of the Hound",
+          "points": 25
+        },
+        {
+          "name": "Tyrant's Lash",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "name": "Renegade Warband",
+      "enhancements": [
+        {
+          "name": "Empyric Symbiote",
+          "points": 15
+        },
+        {
+          "name": "Eyes of the Hunter",
+          "points": 15
+        },
+        {
+          "name": "Fratricidal Trophies",
+          "points": 5
+        },
+        {
+          "name": "Weaponised Hatred",
+          "points": 35
+        }
+      ]
+    },
+    {
+      "name": "Soulforged Warpack",
+      "enhancements": [
+        {
+          "name": "Forge's Blessing",
+          "points": 20
+        },
+        {
+          "name": "Invigorated Mechatendrils",
+          "points": 15
+        },
+        {
+          "name": "Tempting Addendum",
+          "points": 25
+        },
+        {
+          "name": "Soul Harvester",
+          "points": 15
+        }
+      ]
+    }
+  ]
+}

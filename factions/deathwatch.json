@@ -1,0 +1,286 @@
+{
+  "faction": "Deathwatch",
+  "faction_url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/",
+  "units": [
+    {
+      "id": "000000358",
+      "name": "Corvus Blackstar",
+      "options": [
+        [
+          1,
+          180
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Corvus-Blackstar",
+      "keywords": [
+        "Vehicle",
+        "Aircraft",
+        "Fly",
+        "Transport",
+        "Imperium",
+        "Corvus Blackstar"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000003873",
+      "name": "Deathwatch Terminator Squad",
+      "options": [
+        [
+          5,
+          190
+        ],
+        [
+          10,
+          350
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Deathwatch-Terminator-Squad",
+      "keywords": [
+        "Infantry",
+        "Terminator",
+        "Imperium",
+        "Deathwatch Terminator Squad",
+        "Kill Team"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002783",
+      "name": "Deathwatch Veterans",
+      "options": [
+        [
+          5,
+          100
+        ],
+        [
+          10,
+          190
+        ]
+      ],
+      "category": "battleline",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Deathwatch-Veterans",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Battleline",
+        "Deathwatch Veterans",
+        "Kill Team"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000004175",
+      "name": "Decimus Kill Team",
+      "options": [
+        [
+          5,
+          100
+        ],
+        [
+          10,
+          200
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Decimus-Kill-Team",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Decimus Kill Team",
+        "Tacticus",
+        "Gravis",
+        "Battleline",
+        "Kill Team"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002780",
+      "name": "Fortis Kill Team",
+      "options": [
+        [
+          10,
+          180
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Fortis-Kill-Team",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Fortis Kill Team",
+        "Kill Team",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002781",
+      "name": "Indomitor Kill Team",
+      "options": [
+        [
+          10,
+          265
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Indomitor-Kill-Team",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Indomitor Kill Team",
+        "Kill Team",
+        "Gravis"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002779",
+      "name": "Spectrus Kill Team",
+      "options": [
+        [
+          10,
+          180
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Spectrus-Kill-Team",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Phobos",
+        "Spectrus Kill Team",
+        "Smoke",
+        "Kill Team"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000003874",
+      "name": "Talonstrike Kill Team",
+      "options": [
+        [
+          10,
+          275
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Talonstrike-Kill-Team",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Fly",
+        "Jump Pack",
+        "Imperium",
+        "Talonstrike Kill Team",
+        "Kill Team"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000003872",
+      "name": "Watch Captain Artemis",
+      "options": [
+        [
+          1,
+          65
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Watch-Captain-Artemis",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Captain",
+        "Watch Captain Artemis",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000003871",
+      "name": "Watch Master",
+      "options": [
+        [
+          1,
+          95
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/deathwatch/Watch-Master",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Watch Master",
+        "Grenades",
+        "Captain"
+      ],
+      "faction_keywords": [
+        "Deathwatch",
+        "Adeptus Astartes"
+      ]
+    }
+  ],
+  "detachments": [
+    {
+      "name": "Black Spear Task Force",
+      "enhancements": [
+        {
+          "name": "Beacon Angelis",
+          "points": 25
+        },
+        {
+          "name": "Osseus Key",
+          "points": 15
+        },
+        {
+          "name": "The Tome of Ectoclades",
+          "points": 30
+        },
+        {
+          "name": "Thief of Secrets",
+          "points": 25
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,514 @@
+{
+  "faction": "Blood Angels",
+  "faction_url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/",
+  "units": [
+    {
+      "id": "000000157",
+      "name": "Astorath",
+      "options": [
+        [
+          1,
+          85
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Astorath",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Fly",
+        "Jump Pack",
+        "Imperium",
+        "Chaplain",
+        "Astorath",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000168",
+      "name": "Baal Predator",
+      "options": [
+        [
+          1,
+          125
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Baal-Predator",
+      "keywords": [
+        "Vehicle",
+        "Smoke",
+        "Imperium",
+        "Baal Predator"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000003831",
+      "name": "Blood Angels Captain",
+      "options": [
+        [
+          1,
+          80
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Blood-Angels-Captain",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Captain",
+        "Tacticus",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000155",
+      "name": "Chief Librarian Mephiston",
+      "options": [
+        [
+          1,
+          120
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Chief-Librarian-Mephiston",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Psyker",
+        "Imperium",
+        "Chief Librarian Mephiston",
+        "Tacticus",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000151",
+      "name": "Commander Dante",
+      "options": [
+        [
+          1,
+          120
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Commander-Dante",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Fly",
+        "Jump Pack",
+        "Imperium",
+        "Chapter Master",
+        "Commander Dante",
+        "Tacticus",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000003832",
+      "name": "Death Company Captain",
+      "options": [
+        [
+          1,
+          70
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Death-Company-Captain",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Captain",
+        "Death Company",
+        "Grenades",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000003833",
+      "name": "Death Company Captain with Jump Pack",
+      "options": [
+        [
+          1,
+          75
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Death-Company-Captain-with-Jump-Pack",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Fly",
+        "Jump Pack",
+        "Imperium",
+        "Captain",
+        "Death Company",
+        "Tacticus",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000166",
+      "name": "Death Company Dreadnought",
+      "options": [
+        [
+          1,
+          160
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Death-Company-Dreadnought",
+      "keywords": [
+        "Vehicle",
+        "Walker",
+        "Imperium",
+        "Dreadnought",
+        "Death Company",
+        "Death Company Dreadnought"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000001997",
+      "name": "Death Company Marines",
+      "options": [
+        [
+          5,
+          85
+        ],
+        [
+          10,
+          160
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Death-Company-Marines",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Death Company",
+        "Tacticus",
+        "Death Company Marines"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002285",
+      "name": "Death Company Marines with Bolt Rifles",
+      "options": [
+        [
+          5,
+          85
+        ],
+        [
+          10,
+          160
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Death-Company-Marines-with-Bolt-Rifles",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Death Company",
+        "Tacticus",
+        "Death Company Marines with Bolt Rifles"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002737",
+      "name": "Death Company Marines with Jump Packs",
+      "options": [
+        [
+          5,
+          120
+        ],
+        [
+          10,
+          230
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Death-Company-Marines-with-Jump-Packs",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Fly",
+        "Jump Pack",
+        "Imperium",
+        "Death Company",
+        "Tacticus",
+        "Death Company Marines with Jump Packs"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000164",
+      "name": "Lemartes",
+      "options": [
+        [
+          1,
+          100
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Lemartes",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Fly",
+        "Jump Pack",
+        "Imperium",
+        "Chaplain",
+        "Lemartes",
+        "Grenades",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000165",
+      "name": "Sanguinary Guard",
+      "options": [
+        [
+          3,
+          125
+        ],
+        [
+          6,
+          260
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Sanguinary-Guard",
+      "keywords": [
+        "Infantry",
+        "Fly",
+        "Jump Pack",
+        "Imperium",
+        "Sanguinary Guard",
+        "Grenades",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000158",
+      "name": "Sanguinary Priest",
+      "options": [
+        [
+          1,
+          75
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/Sanguinary-Priest",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Sanguinary Priest",
+        "Grenades",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000156",
+      "name": "The Sanguinor",
+      "options": [
+        [
+          1,
+          130
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/blood-angels/The-Sanguinor",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Fly",
+        "Jump Pack",
+        "Imperium",
+        "The Sanguinor",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Blood Angels",
+        "Adeptus Astartes"
+      ]
+    }
+  ],
+  "detachments": [
+    {
+      "name": "Angelic Inheritors",
+      "enhancements": [
+        {
+          "name": "Blazing Icon",
+          "points": 20
+        },
+        {
+          "name": "Ordained Sacrifice",
+          "points": 25
+        },
+        {
+          "name": "Prescient Flash",
+          "points": 20
+        },
+        {
+          "name": "Troubling Visions",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "name": "Liberator Assault Group",
+      "enhancements": [
+        {
+          "name": "Gift of Foresight",
+          "points": 15
+        },
+        {
+          "name": "Icon of the Angel",
+          "points": 20
+        },
+        {
+          "name": "Rage-fuelled Warrior",
+          "points": 35
+        },
+        {
+          "name": "Speed of the Primarch",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "name": "Rage-cursed Onslaught",
+      "enhancements": [
+        {
+          "name": "Angel's Fang",
+          "points": 25
+        },
+        {
+          "name": "Carmine Reliquary",
+          "points": 30
+        },
+        {
+          "name": "Master of the Red Thirst",
+          "points": 25
+        },
+        {
+          "name": "Sanguinary Tear",
+          "points": 35
+        }
+      ]
+    },
+    {
+      "name": "The Angelic Host",
+      "enhancements": [
+        {
+          "name": "Archangel's Shard",
+          "points": 15
+        },
+        {
+          "name": "Artisan of War",
+          "points": 20
+        },
+        {
+          "name": "Gleaming Pinions",
+          "points": 25
+        },
+        {
+          "name": "Visage of Death",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "name": "The Lost Brethren",
+      "enhancements": [
+        {
+          "name": "Blood Shard",
+          "points": 25
+        },
+        {
+          "name": "Sanguinius' Grace",
+          "points": 20
+        },
+        {
+          "name": "To Slay the Warmaster",
+          "points": 15
+        },
+        {
+          "name": "Vengeful Onslaught",
+          "points": 10
+        }
+      ]
+    }
+  ]
+}

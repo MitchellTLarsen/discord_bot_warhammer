@@ -1,0 +1,529 @@
+{
+  "faction": "Dark Angels",
+  "faction_url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/",
+  "units": [
+    {
+      "id": "000000225",
+      "name": "Asmodai",
+      "options": [
+        [
+          1,
+          70
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Asmodai",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Chaplain",
+        "Asmodai",
+        "Tacticus",
+        "Deathwing",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000218",
+      "name": "Azrael",
+      "options": [
+        [
+          1,
+          125
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Azrael",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Chapter Master",
+        "Azrael",
+        "Grenades",
+        "Deathwing",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000219",
+      "name": "Belial",
+      "options": [
+        [
+          1,
+          85
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Belial",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Terminator",
+        "Imperium",
+        "Captain",
+        "Belial",
+        "Deathwing"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000231",
+      "name": "Deathwing Knights",
+      "options": [
+        [
+          5,
+          250
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Deathwing-Knights",
+      "keywords": [
+        "Infantry",
+        "Terminator",
+        "Imperium",
+        "Deathwing",
+        "Deathwing Knights"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000230",
+      "name": "Deathwing Terminator Squad",
+      "options": [
+        [
+          5,
+          180
+        ],
+        [
+          10,
+          360
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Deathwing-Terminator-Squad",
+      "keywords": [
+        "Infantry",
+        "Terminator",
+        "Imperium",
+        "Deathwing",
+        "Deathwing Terminator Squad"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000226",
+      "name": "Ezekiel",
+      "options": [
+        [
+          1,
+          75
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Ezekiel",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Psyker",
+        "Imperium",
+        "Librarian",
+        "Ezekiel",
+        "Grenades",
+        "Deathwing"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000003698",
+      "name": "Inner Circle Companions",
+      "options": [
+        [
+          3,
+          90
+        ],
+        [
+          6,
+          180
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Inner-Circle-Companions",
+      "keywords": [
+        "Infantry",
+        "Imperium",
+        "Inner Circle Companions",
+        "Deathwing",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000242",
+      "name": "Land Speeder Vengeance",
+      "options": [
+        [
+          1,
+          120
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Land-Speeder-Vengeance",
+      "keywords": [
+        "Vehicle",
+        "Fly",
+        "Imperium",
+        "Ravenwing",
+        "Land Speeder Vengeance"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002296",
+      "name": "Lazarus",
+      "options": [
+        [
+          1,
+          70
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Lazarus",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Captain",
+        "Lazarus",
+        "Grenades",
+        "Deathwing",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002682",
+      "name": "Lion El'Jonson",
+      "options": [
+        [
+          1,
+          315
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Lion-El-Jonson",
+      "keywords": [
+        "Monster",
+        "Character",
+        "Epic Hero",
+        "Primarch",
+        "Imperium",
+        "Lion El'Jonson",
+        "Lion El\u2019Jonson"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000239",
+      "name": "Nephilim Jetfighter",
+      "options": [
+        [
+          1,
+          195
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Nephilim-Jetfighter",
+      "keywords": [
+        "Vehicle",
+        "Aircraft",
+        "Fly",
+        "Imperium",
+        "Ravenwing",
+        "Nephilim Jetfighter"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000241",
+      "name": "Ravenwing Black Knights",
+      "options": [
+        [
+          3,
+          80
+        ],
+        [
+          6,
+          160
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Ravenwing-Black-Knights",
+      "keywords": [
+        "Mounted",
+        "Grenades",
+        "Imperium",
+        "Ravenwing",
+        "Ravenwing Black Knights"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002748",
+      "name": "Ravenwing Command Squad",
+      "options": [
+        [
+          3,
+          120
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Ravenwing-Command-Squad",
+      "keywords": [
+        "Mounted",
+        "Grenades",
+        "Imperium",
+        "Ravenwing",
+        "Ravenwing Command Squad",
+        "Character"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000240",
+      "name": "Ravenwing Dark Talon",
+      "options": [
+        [
+          1,
+          210
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Ravenwing-Dark-Talon",
+      "keywords": [
+        "Vehicle",
+        "Aircraft",
+        "Fly",
+        "Imperium",
+        "Ravenwing",
+        "Ravenwing Dark Talon",
+        "Dark Talon"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000000238",
+      "name": "Ravenwing Darkshroud",
+      "options": [
+        [
+          1,
+          100
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Ravenwing-Darkshroud",
+      "keywords": [
+        "Vehicle",
+        "Fly",
+        "Imperium",
+        "Ravenwing",
+        "Ravenwing Darkshroud"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002291",
+      "name": "Sammael",
+      "options": [
+        [
+          1,
+          115
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/dark-angels/Sammael",
+      "keywords": [
+        "Mounted",
+        "Character",
+        "Epic Hero",
+        "Fly",
+        "Imperium",
+        "Ravenwing",
+        "Sammael",
+        "Grenades",
+        "Captain"
+      ],
+      "faction_keywords": [
+        "Dark Angels",
+        "Adeptus Astartes"
+      ]
+    }
+  ],
+  "detachments": [
+    {
+      "name": "Company of Hunters",
+      "enhancements": [
+        {
+          "name": "Master of Manoeuvre",
+          "points": 15
+        },
+        {
+          "name": "Master-crafted Weapon",
+          "points": 10
+        },
+        {
+          "name": "Mounted Strategist",
+          "points": 30
+        },
+        {
+          "name": "Recon Hunter",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "name": "Inner Circle Task Force",
+      "enhancements": [
+        {
+          "name": "Champion of the Deathwing",
+          "points": 15
+        },
+        {
+          "name": "Deathwing Assault",
+          "points": 30
+        },
+        {
+          "name": "Eye of the Unseen",
+          "points": 10
+        },
+        {
+          "name": "Singular Will",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "name": "Lion's Blade Task Force",
+      "enhancements": [
+        {
+          "name": "Calibanite Armaments",
+          "points": 15
+        },
+        {
+          "name": "Fulgus Magna",
+          "points": 20
+        },
+        {
+          "name": "Lord of the Hunt",
+          "points": 15
+        },
+        {
+          "name": "Stalwart Champion",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "name": "Unforgiven Task Force",
+      "enhancements": [
+        {
+          "name": "Pennant of Remembrance",
+          "points": 10
+        },
+        {
+          "name": "Shroud of Heroes",
+          "points": 25
+        },
+        {
+          "name": "Stubborn Tenacity",
+          "points": 15
+        },
+        {
+          "name": "Weapons of the First Legion",
+          "points": 15
+        }
+      ]
+    },
+    {
+      "name": "Wrath of the Rock",
+      "enhancements": [
+        {
+          "name": "Ancient Weapons",
+          "points": 25
+        },
+        {
+          "name": "Deathwing Assault",
+          "points": 15
+        },
+        {
+          "name": "Lord of the Ravenwing",
+          "points": 10
+        },
+        {
+          "name": "Tempered in Battle",
+          "points": 10
+        }
+      ]
+    }
+  ]
+}

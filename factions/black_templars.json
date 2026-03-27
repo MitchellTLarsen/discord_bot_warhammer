@@ -1,0 +1,549 @@
+{
+  "faction": "Black Templars",
+  "faction_url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/",
+  "units": [
+    {
+      "id": "000002793",
+      "name": "Castellan",
+      "options": [
+        [
+          1,
+          70
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Castellan",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Tacticus",
+        "Castellan",
+        "Grenades",
+        "Lieutenant"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002792",
+      "name": "Chaplain Grimaldus",
+      "options": [
+        [
+          4,
+          110
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Chaplain-Grimaldus",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Chaplain Grimaldus",
+        "Tacticus",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000004136",
+      "name": "Crusade Ancient",
+      "options": [
+        [
+          1,
+          55
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Crusade-Ancient",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Ancient",
+        "Crusade Ancient",
+        "Grenades",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002799",
+      "name": "Crusader Squad",
+      "options": [
+        [
+          10,
+          150
+        ],
+        [
+          20,
+          300
+        ]
+      ],
+      "category": "battleline",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Crusader-Squad",
+      "keywords": [
+        "Infantry",
+        "Battleline",
+        "Grenades",
+        "Imperium",
+        "Crusader Squad",
+        "Tacticus"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002795",
+      "name": "Emperor's Champion",
+      "options": [
+        [
+          1,
+          100
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Emperors-Champion",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "Emperor's Champion",
+        "Emperor\u2019s Champion",
+        "Tacticus",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000004135",
+      "name": "Execrator",
+      "options": [
+        [
+          1,
+          60
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Execrator",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Execrator",
+        "Chaplain",
+        "Tacticus",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002787",
+      "name": "Gladiator Lancer",
+      "options": [
+        [
+          1,
+          160
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Gladiator-Lancer",
+      "keywords": [
+        "Vehicle",
+        "Smoke",
+        "Imperium",
+        "Gladiator Lancer"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002789",
+      "name": "Gladiator Reaper",
+      "options": [
+        [
+          1,
+          160
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Gladiator-Reaper",
+      "keywords": [
+        "Vehicle",
+        "Smoke",
+        "Imperium",
+        "Gladiator Reaper"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002788",
+      "name": "Gladiator Valiant",
+      "options": [
+        [
+          1,
+          150
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Gladiator-Valiant",
+      "keywords": [
+        "Vehicle",
+        "Smoke",
+        "Imperium",
+        "Gladiator Valiant"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002794",
+      "name": "High Marshal Helbrecht",
+      "options": [
+        [
+          1,
+          120
+        ]
+      ],
+      "is_unique": true,
+      "category": "epic_hero",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/High-Marshal-Helbrecht",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Epic Hero",
+        "Imperium",
+        "High Marshal Helbrecht",
+        "Tacticus",
+        "Grenades",
+        "Chapter Master"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002786",
+      "name": "Impulsor",
+      "options": [
+        [
+          1,
+          85
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Impulsor",
+      "keywords": [
+        "Vehicle",
+        "Transport",
+        "Dedicated Transport",
+        "Imperium",
+        "Impulsor"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000004139",
+      "name": "Land Raider Crusader",
+      "options": [
+        [
+          1,
+          220
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Land-Raider-Crusader",
+      "keywords": [
+        "Vehicle",
+        "Transport",
+        "Smoke",
+        "Imperium",
+        "Land Raider",
+        "Land Raider Crusader",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002796",
+      "name": "Marshal",
+      "options": [
+        [
+          1,
+          80
+        ]
+      ],
+      "category": "character",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Marshal",
+      "keywords": [
+        "Infantry",
+        "Character",
+        "Imperium",
+        "Captain",
+        "Marshal",
+        "Tacticus",
+        "Grenades"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000004137",
+      "name": "Sternguard Veteran Squad",
+      "options": [
+        [
+          5,
+          85
+        ],
+        [
+          10,
+          170
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Sternguard-Veteran-Squad",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Tacticus",
+        "Sternguard Veteran Squad"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002798",
+      "name": "Sword Brethren",
+      "options": [
+        [
+          4,
+          105
+        ],
+        [
+          5,
+          130
+        ],
+        [
+          9,
+          235
+        ],
+        [
+          10,
+          260
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Sword-Brethren",
+      "keywords": [
+        "Infantry",
+        "Grenades",
+        "Imperium",
+        "Tacticus",
+        "Sword Brethren",
+        "Sword Brethren Squad"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000004138",
+      "name": "Terminator Squad",
+      "options": [
+        [
+          5,
+          175
+        ],
+        [
+          10,
+          330
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Terminator-Squad",
+      "keywords": [
+        "Infantry",
+        "Terminator",
+        "Imperium",
+        "Terminator Squad"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002791",
+      "name": "Repulsor",
+      "options": [
+        [
+          1,
+          180
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Repulsor",
+      "keywords": [
+        "Vehicle",
+        "Transport",
+        "Smoke",
+        "Imperium",
+        "Repulsor"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    },
+    {
+      "id": "000002790",
+      "name": "Repulsor Executioner",
+      "options": [
+        [
+          1,
+          235
+        ]
+      ],
+      "category": "other",
+      "url": "https://wahapedia.ru/wh40k10ed/factions/black-templars/Repulsor-Executioner",
+      "keywords": [
+        "Vehicle",
+        "Transport",
+        "Smoke",
+        "Imperium",
+        "Repulsor Executioner"
+      ],
+      "faction_keywords": [
+        "Black Templars",
+        "Adeptus Astartes"
+      ]
+    }
+  ],
+  "detachments": [
+    {
+      "name": "Companions of Vehemence",
+      "enhancements": [
+        {
+          "name": "Incendiary Animus",
+          "points": 25
+        },
+        {
+          "name": "Merciless Denunciation",
+          "points": 25
+        },
+        {
+          "name": "Oathbound Exemplar",
+          "points": 15
+        },
+        {
+          "name": "Zealous Vanguard",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "name": "Godhammer Assault Force",
+      "enhancements": [
+        {
+          "name": "Augury Servo-host",
+          "points": 15
+        },
+        {
+          "name": "Battle-psalm Precentor",
+          "points": 10
+        },
+        {
+          "name": "Herald of Sacred Slaughter",
+          "points": 15
+        },
+        {
+          "name": "Paragon of Fury",
+          "points": 25
+        }
+      ]
+    },
+    {
+      "name": "Vindication Task Force",
+      "enhancements": [
+        {
+          "name": "Consecrating Aura",
+          "points": 25
+        },
+        {
+          "name": "Imperialis of the Eternal Crusade",
+          "points": 15
+        },
+        {
+          "name": "Orb of the Emperor's Aegis",
+          "points": 10
+        },
+        {
+          "name": "Warden of Honour",
+          "points": 20
+        }
+      ]
+    },
+    {
+      "name": "Wrathful Procession",
+      "enhancements": [
+        {
+          "name": "Benediction of Fury",
+          "points": 10
+        },
+        {
+          "name": "Pyrebrand",
+          "points": 25
+        },
+        {
+          "name": "Sacred Rage",
+          "points": 30
+        },
+        {
+          "name": "Taramond's Censer",
+          "points": 15
+        }
+      ]
+    }
+  ]
+}
