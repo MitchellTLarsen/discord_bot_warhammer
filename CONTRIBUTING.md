@@ -2,6 +2,46 @@
 
 Thanks for your interest in contributing!
 
+## Local Setup
+
+### 1. Create Your Own Discord Bot (for testing)
+
+You'll need your own bot token to test locally. **Never use the production token.**
+
+1. Go to the [Discord Developer Portal](https://discord.com/developers/applications)
+2. Click **New Application** → Name it something like "Army Bot Dev"
+3. Go to **Bot** (left sidebar)
+4. Click **Reset Token** → Copy the token
+5. Enable these **Privileged Gateway Intents** (scroll down):
+   - None required for basic functionality
+6. Go to **OAuth2** → **URL Generator**
+   - Scopes: `bot`, `applications.commands`
+   - Bot Permissions: `Send Messages`, `Embed Links`, `Attach Files`, `Use Slash Commands`
+7. Copy the generated URL and open it to invite the bot to your test server
+
+### 2. Clone and Configure
+
+```bash
+git clone https://github.com/MitchellTLarsen/discord_bot_warhammer.git
+cd discord_bot_warhammer
+pip install -r requirements.txt
+```
+
+Create a `.env` file (this is gitignored):
+```
+DISCORD_TOKEN=your_bot_token_here
+```
+
+### 3. Run Locally
+
+```bash
+python bot.py
+```
+
+The bot should come online in your test server. Use `/randomise` to test.
+
+---
+
 ## How to Contribute
 
 1. **Fork the repository** (or create a branch if you have access)
