@@ -195,7 +195,7 @@ class ArmyCog(commands.Cog):
     async def factions_command(self, interaction: discord.Interaction):
         if not self.factions:
             return await interaction.response.send_message("No factions loaded. Contact an admin.", ephemeral=True)
-        await interaction.response.send_message(f"**Available Factions:**\n" + "\n".join(f"- {n}" for n in sorted(self.factions.keys())))
+        await interaction.response.send_message("**Available Factions:**\n" + "\n".join(f"- {n}" for n in sorted(self.factions.keys())))
 
     @app_commands.command(name="detachments", description="List detachments for a faction")
     @app_commands.describe(faction="The faction")

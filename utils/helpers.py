@@ -1,7 +1,10 @@
 """Reusable helper utilities."""
 
-from typing import Callable
+from typing import Callable, TYPE_CHECKING
 from discord import app_commands
+
+if TYPE_CHECKING:
+    from cogs.army import ArmyCog
 
 
 def parse_csv(value: str | None) -> list[str] | None:
@@ -85,9 +88,3 @@ def multi_autocomplete(
         return [app_commands.Choice(name=f"{prefix}{i}".strip(), value=f"{prefix}{i}".strip())
                 for i in items if cur_lower in i.lower()][:25]
     return autocomplete
-
-
-# Type hint for the ArmyCog (avoids circular import)
-from typing import TYPE_CHECKING
-if TYPE_CHECKING:
-    from cogs.army import ArmyCog
