@@ -4,8 +4,6 @@ Warhammer 40K Army Randomiser - CLI Version
 Generates random 2000 point lists.
 """
 
-from pathlib import Path
-
 from services.loader import load_factions
 from services.generator import generate_army
 from utils.formatters import format_army_plain_text
