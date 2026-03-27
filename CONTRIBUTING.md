@@ -30,7 +30,12 @@ pip install -r requirements.txt
 Create a `.env` file (this is gitignored):
 ```
 DISCORD_TOKEN=your_bot_token_here
+DEV_GUILD_ID=your_test_server_id
 ```
+
+To get your server ID:
+1. Enable Developer Mode in Discord (Settings → App Settings → Advanced → Developer Mode)
+2. Right-click your test server → Copy Server ID
 
 ### 3. Run Locally
 
@@ -38,7 +43,12 @@ DISCORD_TOKEN=your_bot_token_here
 python bot.py
 ```
 
-The bot should come online in your test server. Use `/randomise` to test.
+You should see `[DEV MODE] Logged in as YourBot#1234`.
+
+**Dev mode benefits:**
+- Commands only appear in your test server (won't conflict with production)
+- Command updates are instant (no 1-hour global sync delay)
+- Safe to test without affecting production users
 
 ---
 

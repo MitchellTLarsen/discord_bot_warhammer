@@ -11,6 +11,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+# Dev mode: commands only sync to this guild (instant updates, isolated from prod)
+DEV_GUILD_ID = os.getenv("DEV_GUILD_ID")
+DEV_GUILD = discord.Object(id=int(DEV_GUILD_ID)) if DEV_GUILD_ID else None
+
 
 class ArmyBot(commands.Bot):
     def __init__(self):
@@ -19,10 +23,18 @@ class ArmyBot(commands.Bot):
 
     async def setup_hook(self):
         await self.load_extension("cogs.army")
-        await self.tree.sync()
+        if DEV_GUILD:
+            # Dev mode: sync to test server only (instant, isolated)
+            self.tree.copy_global_to(guild=DEV_GUILD)
+            await self.tree.sync(guild=DEV_GUILD)
+            print(f"[DEV MODE] Commands synced to guild {DEV_GUILD_ID}")
+        else:
+            # Production: sync globally
+            await self.tree.sync()
 
     async def on_ready(self):
-        print(f"Logged in as {self.user}")
+        mode = "DEV" if DEV_GUILD else "PROD"
+        print(f"[{mode}] Logged in as {self.user}")
 
 
 bot = ArmyBot()
@@ -32,7 +44,11 @@ bot = ArmyBot()
 async def reload_commands(interaction: discord.Interaction):
     try:
         await bot.reload_extension("cogs.army")
-        await bot.tree.sync()
+        if DEV_GUILD:
+            bot.tree.copy_global_to(guild=DEV_GUILD)
+            await bot.tree.sync(guild=DEV_GUILD)
+        else:
+            await bot.tree.sync()
         await interaction.response.send_message("Reloaded successfully!", ephemeral=True)
     except Exception as error:
         await interaction.response.send_message(f"Reload failed: {error}", ephemeral=True)
