@@ -26,7 +26,8 @@ class ArmyButtonView(discord.ui.View):
     def __init__(self, bot: commands.Bot, faction: str, points: int, detachment: str | None,
                  army_list: ArmyList, bias_keywords: list[str] | None = None,
                  exclude_keywords: list[str] | None = None, include_units: list[str] | None = None,
-                 rerolls_left: int = 3, faction_was_random: bool = False):
+                 rerolls_left: int = 3, faction_was_random: bool = False,
+                 collection: dict[str, int] | None = None, owned_by: str | None = None):
         super().__init__(timeout=None)
         self.bot = bot
         self.faction = faction
@@ -38,6 +39,8 @@ class ArmyButtonView(discord.ui.View):
         self.include_units = include_units
         self.rerolls_left = rerolls_left
         self.faction_was_random = faction_was_random
+        self.collection = collection
+        self.owned_by = owned_by
 
     def _get_cog(self) -> "ArmyCog | None":
         return self.bot.get_cog("ArmyCog")
@@ -56,9 +59,13 @@ class ArmyButtonView(discord.ui.View):
             # Pick new random faction if original was random
             faction = self.faction
             detachment = self.detachment
+            collection = self.collection
+            owned_by = self.owned_by
             if self.faction_was_random:
                 faction = random.choice(list(cog.factions.keys()))
                 detachment = None  # Reset detachment when faction changes
+                collection = None  # Collection is faction-specific, reset when faction changes
+                owned_by = None
 
             if faction not in cog.factions:
                 await interaction.response.send_message(f"Faction '{faction}' no longer available.", ephemeral=True)
@@ -66,7 +73,7 @@ class ArmyButtonView(discord.ui.View):
 
             new_rerolls = self.rerolls_left - 1
             new_list = generate_army(cog.factions[faction], self.points, detachment,
-                                    self.bias_keywords, self.exclude_keywords, self.include_units, faction)
+                                    self.bias_keywords, self.exclude_keywords, self.include_units, faction, collection)
             if not new_list.units:
                 await interaction.response.send_message("Failed to generate army. Try different options.", ephemeral=True)
                 return
@@ -74,11 +81,12 @@ class ArmyButtonView(discord.ui.View):
             embed = format_army_embed(faction, cog.factions[faction].url, new_list)
             view = ArmyButtonView(self.bot, faction, self.points, detachment, new_list,
                                  self.bias_keywords, self.exclude_keywords, self.include_units, new_rerolls,
-                                 self.faction_was_random)
+                                 self.faction_was_random, collection, owned_by)
             view.reroll_button.label = f"Re-roll ({new_rerolls})" if new_rerolls > 0 else "No re-rolls left"
             view.reroll_button.disabled = new_rerolls <= 0
 
-            content = build_content_lines(Include=self.include_units, Bias=self.bias_keywords, Exclude=self.exclude_keywords)
+            owned_display = f"{owned_by} ({faction})" if owned_by else None
+            content = build_content_lines(Include=self.include_units, Bias=self.bias_keywords, Exclude=self.exclude_keywords, Owned=owned_display)
             await interaction.response.edit_message(content=content, embed=embed, view=view)
         except Exception as e:
             log.error(f"Reroll error: {e}\n{traceback.format_exc()}")
@@ -103,7 +111,9 @@ class BattleButtonView(discord.ui.View):
                  points: int, detachment1: str | None = None, detachment2: str | None = None,
                  bias_kw: list[str] | None = None, exclude_kw: list[str] | None = None,
                  challenge_desc: str | None = None, rerolls1: int = 3, rerolls2: int = 3,
-                 faction1_was_random: bool = False, faction2_was_random: bool = False):
+                 faction1_was_random: bool = False, faction2_was_random: bool = False,
+                 collection1: dict[str, int] | None = None, collection2: dict[str, int] | None = None,
+                 owned_by1: str | None = None, owned_by2: str | None = None):
         super().__init__(timeout=None)
         self.bot = bot
         self.user1, self.user2 = user1, user2
@@ -116,6 +126,8 @@ class BattleButtonView(discord.ui.View):
         self.rerolls1, self.rerolls2 = rerolls1, rerolls2
         self.faction1_was_random = faction1_was_random
         self.faction2_was_random = faction2_was_random
+        self.collection1, self.collection2 = collection1, collection2
+        self.owned_by1, self.owned_by2 = owned_by1, owned_by2
         self._update_labels()
 
     def _get_cog(self) -> "ArmyCog | None":
@@ -137,10 +149,12 @@ class BattleButtonView(discord.ui.View):
             lines.append(f"**Exclude:** {', '.join(self.exclude_kw)}")
 
         p1_det = f" ({self.army1.detachment.name})" if self.army1.detachment else ""
-        lines.append(f"\n{self.user1.display_name}: **{self.faction1}**{p1_det}")
+        p1_owned = f" [Owned: {self.owned_by1}]" if self.owned_by1 else ""
+        lines.append(f"\n{self.user1.display_name}: **{self.faction1}**{p1_det}{p1_owned}")
 
         p2_det = f" ({self.army2.detachment.name})" if self.army2.detachment else ""
-        lines.append(f"{self.user2.display_name}: **{self.faction2}**{p2_det}")
+        p2_owned = f" [Owned: {self.owned_by2}]" if self.owned_by2 else ""
+        lines.append(f"{self.user2.display_name}: **{self.faction2}**{p2_det}{p2_owned}")
         return "\n".join(lines)
 
     @discord.ui.button(label="Re-roll P1 (3)", style=discord.ButtonStyle.primary, emoji="🎲", row=0)
@@ -176,6 +190,7 @@ class BattleButtonView(discord.ui.View):
             faction_was_random = self.faction1_was_random if player == 1 else self.faction2_was_random
             faction = self.faction1 if player == 1 else self.faction2
             detachment = self.detachment1 if player == 1 else self.detachment2
+            collection = self.collection1 if player == 1 else self.collection2
 
             # Pick new random faction if original was random (exclude other player's faction)
             if faction_was_random:
@@ -183,22 +198,29 @@ class BattleButtonView(discord.ui.View):
                 available = [f for f in cog.factions.keys() if f != other_faction]
                 faction = random.choice(available)
                 detachment = None  # Reset detachment when faction changes
+                collection = None  # Collection is faction-specific, reset when faction changes
+                if player == 1:
+                    self.owned_by1 = None
+                else:
+                    self.owned_by2 = None
 
             if faction not in cog.factions:
                 return await interaction.response.send_message(f"Faction '{faction}' no longer available.", ephemeral=True)
 
-            new_army = generate_army(cog.factions[faction], self.points, detachment, self.bias_kw, self.exclude_kw, None, faction)
+            new_army = generate_army(cog.factions[faction], self.points, detachment, self.bias_kw, self.exclude_kw, None, faction, collection)
             if not new_army.units:
                 return await interaction.response.send_message("Failed to generate army.", ephemeral=True)
 
             if player == 1:
                 self.faction1 = faction
                 self.detachment1 = detachment
+                self.collection1 = collection
                 self.army1 = new_army
                 self.rerolls1 -= 1
             else:
                 self.faction2 = faction
                 self.detachment2 = detachment
+                self.collection2 = collection
                 self.army2 = new_army
                 self.rerolls2 -= 1
 

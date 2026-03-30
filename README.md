@@ -57,6 +57,7 @@ A Discord bot that generates random army lists for Warhammer 40K 10th Edition.
 | `bias` | Bias towards keywords (comma-separated) |
 | `exclude` | Exclude keywords (comma-separated) |
 | `challenge` | Apply a challenge restriction |
+| `owned` | Restrict to units owned by @user |
 
 ### Battle Options
 
@@ -71,6 +72,8 @@ A Discord bot that generates random army lists for Warhammer 40K 10th Edition.
 | `bias` | Bias keywords for both armies |
 | `exclude` | Exclude keywords for both armies |
 | `challenge` | Challenge restriction for both armies |
+| `your_owned` | Restrict your army to units owned by @user |
+| `opponent_owned` | Restrict opponent's army to units owned by @user |
 
 ### Challenges
 
@@ -79,6 +82,59 @@ A Discord bot that generates random army lists for Warhammer 40K 10th Edition.
 - **Vehicles Only** - Armor up!
 - **Budget Army** - No unit over 150pts
 - **Battleline Heavy** - At least 50% battleline
+
+### Collection-Based Armies
+
+Use the `owned` parameter to restrict army generation to units you actually own:
+
+```
+/randomise faction:Orks owned:@YourUsername
+/battle opponent:@Friend your_faction:Necrons your_owned:@You opponent_owned:@Friend
+```
+
+## Adding Your Collection
+
+To add your collection, edit `data/collections.json`:
+
+```json
+{
+  "collections": {
+    "your_discord_username": {
+      "Faction Name": {
+        "Unit Name": 2,
+        "Another Unit": 1
+      }
+    }
+  }
+}
+```
+
+### How It Works
+
+- The key must match your **Discord username** (lowercase, e.g., `scullerz`)
+- Unit quantities are in **minimum unit sizes**
+- Larger unit options consume multiple minimum units
+
+### Counting Your Units
+
+1. Find the minimum unit size in the faction JSON (e.g., `factions/orks.json`)
+2. Divide your total models by the minimum size
+
+**Example:** You have 40 Boyz. Minimum size is 10.
+- `"Boyz": 4` (40 ÷ 10 = 4 minimum units)
+- Can be fielded as: 4×10, 2×20, 2×10 + 1×20, etc.
+
+**Example:** You have 6 Meganobz. Minimum size is 2.
+- `"Meganobz": 3` (6 ÷ 2 = 3 minimum units)
+
+### Quick Reference for Common Units
+
+| Unit Type | Typical Min Size |
+|-----------|-----------------|
+| Characters | 1 |
+| Vehicles | 1 |
+| Infantry squads | 5 or 10 |
+| Swarms/Beasts | 3-6 |
 
 ## Interactive Buttons
 
@@ -99,7 +155,10 @@ randomiser/
 │   └── models.py             # Data classes (Unit, ArmyList, etc.)
 ├── services/
 │   ├── loader.py             # Faction loading and ally injection
-│   └── generator.py          # Army generation algorithm
+│   ├── generator.py          # Army generation algorithm
+│   └── collections.py        # Player collection management
+├── data/
+│   └── collections.json      # Player-owned unit collections
 ├── utils/
 │   ├── constants.py          # Shared constants
 │   ├── formatters.py         # Output formatting (embeds, text)

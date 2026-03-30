@@ -8,6 +8,18 @@ from services.loader import is_ally
 from utils.constants import BIAS_MULTIPLIER, DAEMON_RESTRICTIONS
 
 
+def _get_min_unit_size(unit: Unit) -> int:
+    """Get the minimum unit size from a unit's options."""
+    if not unit.options:
+        return 1
+    return min(opt.models for opt in unit.options)
+
+
+def _min_units_required(option_models: int, min_unit_size: int) -> int:
+    """Calculate how many minimum-sized units are needed for this option."""
+    return (option_models + min_unit_size - 1) // min_unit_size  # Ceiling division
+
+
 def group_units_by_category(army: list[SelectedUnit], faction_name: str | None = None) -> tuple[dict[str, list[SelectedUnit]], list[SelectedUnit]]:
     """Group units by category, separating allies if faction_name provided."""
     groups: defaultdict[str, list[SelectedUnit]] = defaultdict(list)
@@ -31,7 +43,8 @@ def generate_army(
     bias_keywords: list[str] | None = None,
     exclude_keywords: list[str] | None = None,
     include_units: list[str] | None = None,
-    faction_name: str | None = None
+    faction_name: str | None = None,
+    collection: dict[str, int] | None = None
 ) -> ArmyList:
     """Generate a random army list for a faction."""
     # Select detachment
@@ -53,6 +66,8 @@ def generate_army(
     # Setup
     army: list[SelectedUnit] = []
     unit_counts: defaultdict[str, int] = defaultdict(int)
+    # Track minimum units used per unit type (for collection filtering)
+    min_units_used: defaultdict[str, int] = defaultdict(int)
     faction_lower = (faction_name or "").lower()
     is_space_marines = faction_lower == "space marines"
     is_drukhari = faction_lower == "drukhari"
@@ -88,13 +103,33 @@ def generate_army(
             if unit_counts[unit.name] >= unit.max_count():
                 continue
 
+            # Collection filtering for included units
+            if collection is not None:
+                if unit.name not in collection:
+                    continue
+                owned_min_units = collection[unit.name]
+                used_min_units = min_units_used[unit.name]
+                if used_min_units >= owned_min_units:
+                    continue
+
             valid_opts = [opt for opt in unit.options if opt.points <= available_points]
+            # Also filter by collection availability
+            if collection is not None:
+                min_size = _get_min_unit_size(unit)
+                remaining = collection[unit.name] - min_units_used[unit.name]
+                valid_opts = [opt for opt in valid_opts
+                             if _min_units_required(opt.models, min_size) <= remaining]
             if not valid_opts:
                 continue
             chosen_opt = random.choice(valid_opts)
             army.append(SelectedUnit(unit, chosen_opt))
             available_points -= chosen_opt.points
             unit_counts[unit.name] += 1
+
+            # Track minimum units used for collection filtering
+            if collection is not None:
+                min_size = _get_min_unit_size(unit)
+                min_units_used[unit.name] += _min_units_required(chosen_opt.models, min_size)
 
             # Track ally points/counts
             _track_ally_points(unit, chosen_opt, faction_lower, is_drukhari, is_chaos_knights,
@@ -112,6 +147,16 @@ def generate_army(
                 continue
             if exclude_keywords and unit.has_any_keyword(exclude_keywords):
                 continue
+
+            # Collection filtering: skip units not in collection
+            if collection is not None:
+                if unit.name not in collection:
+                    continue
+                # Check if any minimum units remain
+                owned_min_units = collection[unit.name]
+                used_min_units = min_units_used[unit.name]
+                if used_min_units >= owned_min_units:
+                    continue
 
             # Space Marines chapter lock
             if is_space_marines and locked_chapter:
@@ -213,6 +258,14 @@ def generate_army(
                     if (is_chaos_space_marines or is_chaos_knights) and is_daemon_ally and daemon_ally_points_spent + opt.points > 500:
                         continue
 
+                    # Collection filtering: check if enough minimum units for this option
+                    if collection is not None:
+                        min_size = _get_min_unit_size(unit)
+                        required = _min_units_required(opt.models, min_size)
+                        remaining = collection[unit.name] - min_units_used[unit.name]
+                        if required > remaining:
+                            continue
+
                     valid_options.append((unit, opt))
                     is_ally_unit = faction_name and faction_name not in unit.faction_keywords
                     base_weight = 0.1 if is_ally_unit else 1.0
@@ -226,6 +279,11 @@ def generate_army(
         army.append(SelectedUnit(chosen_unit, chosen_opt))
         available_points -= chosen_opt.points
         unit_counts[chosen_unit.name] += 1
+
+        # Track minimum units used for collection filtering
+        if collection is not None:
+            min_size = _get_min_unit_size(chosen_unit)
+            min_units_used[chosen_unit.name] += _min_units_required(chosen_opt.models, min_size)
 
         # Track ally points
         if is_drukhari and chosen_unit.has_fk("Harlequins"):
@@ -277,6 +335,9 @@ def generate_army(
             freed_points = available_points + to_swap.option.points
 
             characters = [u for u in faction_data.units if u.category in ("character", "epic_hero")]
+            # Filter by collection if applicable
+            if collection is not None:
+                characters = [u for u in characters if u.name in collection and min_units_used[u.name] < collection[u.name]]
             valid_chars = [(u, opt) for u in characters for opt in u.options if opt.points <= freed_points]
             if valid_chars:
                 char_unit, char_opt = random.choice(valid_chars)

@@ -42,6 +42,7 @@ bot = ArmyBot()
 
 @bot.tree.command(name="reload", description="Reload the bot commands (hot reload)")
 async def reload_commands(interaction: discord.Interaction):
+    await interaction.response.defer(ephemeral=True)
     try:
         await bot.reload_extension("cogs.army")
         if DEV_GUILD:
@@ -49,9 +50,9 @@ async def reload_commands(interaction: discord.Interaction):
             await bot.tree.sync(guild=DEV_GUILD)
         else:
             await bot.tree.sync()
-        await interaction.response.send_message("Reloaded successfully!", ephemeral=True)
+        await interaction.followup.send("Reloaded successfully!")
     except Exception as error:
-        await interaction.response.send_message(f"Reload failed: {error}", ephemeral=True)
+        await interaction.followup.send(f"Reload failed: {error}")
 
 
 if __name__ == "__main__":
