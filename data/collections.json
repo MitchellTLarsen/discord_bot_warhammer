@@ -1,6 +1,6 @@
 {
   "collections": {
-    "Dr Doombolt (Diabolical Sloth)": {
+    "wuzzy_bear": {
       "Necrons": {
         "C'tan Shard of the Deceiver": 1,
         "C'tan Shard of the Void Dragon": 1,
@@ -34,7 +34,9 @@
         "Canoptek Reanimator": 1,
         "Doomsday Ark": 3,
         "Ghost Ark": 1
-      },
+      }
+    },
+    "scullerz": {
       "Orks": {
         "Beastboss": 1,
         "Big Mek": 1,
