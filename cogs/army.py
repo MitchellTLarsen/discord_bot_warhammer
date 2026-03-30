@@ -120,11 +120,11 @@ class ArmyCog(commands.Cog):
             det_list = "\n".join(f"- {d.name}" for d in self.factions[faction].detachments)
             return await interaction.response.send_message(f"Unknown detachment: {detachment}\n\n**Available:**\n{det_list}", ephemeral=True)
 
-        # Get player collection if owned=True, using Discord username
+        # Get player collection if owned=True, using Discord display name
         collection = None
         owned_by = None
         if owned:
-            owned_by = interaction.user.display_name
+            owned_by = interaction.user.display_name.strip().lstrip('@')
             collection = get_player_collection(owned_by, faction)
             if collection is None:
                 return await interaction.response.send_message(
@@ -197,19 +197,19 @@ class ArmyCog(commands.Cog):
         if not self._validate_detachment(faction2, opponent_detachment):
             return await interaction.response.send_message(f"Unknown detachment for {faction2}: {opponent_detachment}", ephemeral=True)
 
-        # Get player collections if owned parameters are set (using Discord usernames)
+        # Get player collections if owned parameters are set (using Discord display names)
         collection1 = None
         collection2 = None
         owned_by1 = None
         owned_by2 = None
         if your_owned:
-            owned_by1 = interaction.user.display_name
+            owned_by1 = interaction.user.display_name.strip().lstrip('@')
             collection1 = get_player_collection(owned_by1, faction1)
             if collection1 is None:
                 return await interaction.response.send_message(
                     f"No collection found for '{owned_by1}' with faction '{faction1}'.", ephemeral=True)
         if opponent_owned:
-            owned_by2 = opponent.display_name
+            owned_by2 = opponent.display_name.strip().lstrip('@')
             collection2 = get_player_collection(owned_by2, faction2)
             if collection2 is None:
                 return await interaction.response.send_message(

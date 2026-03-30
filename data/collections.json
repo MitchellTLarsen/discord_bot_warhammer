@@ -1,6 +1,6 @@
 {
   "collections": {
-    "wuzzy_bear": {
+    "Dr Doombolt (Diabolical Sloth)": {
       "Necrons": {
         "C'tan Shard of the Deceiver": 1,
         "C'tan Shard of the Void Dragon": 1,
@@ -34,6 +34,43 @@
         "Canoptek Reanimator": 1,
         "Doomsday Ark": 3,
         "Ghost Ark": 1
+      },
+      "Orks": {
+        "Beastboss": 1,
+        "Big Mek": 1,
+        "Big Mek in Mega Armour": 1,
+        "Big Mek with Shokk Attack Gun": 1,
+        "Boss Snikrot": 1,
+        "Deffkilla Wartrike": 1,
+        "Ghazghkull Thraka": 1,
+        "Mek": 2,
+        "Mozrog Skragbad": 1,
+        "Painboy": 2,
+        "Warboss": 2,
+        "Warboss in Mega Armour": 1,
+        "Weirdboy": 1,
+        "Beast Snagga Boyz": 1,
+        "Boyz": 4,
+        "Trukk": 1,
+        "Battlewagon": 2,
+        "Boomdakka Snazzwagon": 1,
+        "Dakkajet": 1,
+        "Deff Dread": 2,
+        "Deffkoptas": 2,
+        "Gorkanaut": 1,
+        "Gretchin": 3,
+        "Killa Kans": 2,
+        "Kommandos": 2,
+        "Meganobz": 3,
+        "Mek Gunz": 2,
+        "Nobz": 2,
+        "Rukkatrukk Squigbuggy": 1,
+        "Shokkjump Dragsta": 2,
+        "Squighog Boyz": 1,
+        "Stompa": 1,
+        "Stormboyz": 2,
+        "Tankbustas": 1,
+        "Warbikers": 2
       }
     }
   }
