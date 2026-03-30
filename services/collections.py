@@ -28,6 +28,25 @@ def load_collections() -> dict[str, dict[str, dict[str, int]]]:
         return {}
 
 
+def get_player_factions(username: str) -> list[str]:
+    """Get list of factions a player has collections for.
+
+    Args:
+        username: The player's username (case-insensitive)
+
+    Returns:
+        List of faction names the player owns, or empty list if not found
+    """
+    collections = load_collections()
+
+    username_lower = username.lower()
+    for stored_user, factions in collections.items():
+        if stored_user.lower() == username_lower:
+            return list(factions.keys())
+
+    return []
+
+
 def get_player_collection(username: str, faction: str) -> dict[str, int] | None:
     """Get a player's collection for a specific faction.
 
