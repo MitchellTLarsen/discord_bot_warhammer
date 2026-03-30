@@ -152,7 +152,8 @@ class ArmyCog(commands.Cog):
         embed = format_army_embed(faction, self.factions[faction].url, army)
         view = ArmyButtonView(self.bot, faction, points, detachment, army, bias_kw, exclude_kw, include_units,
                              faction_was_random=faction_was_random, collection=collection, owned_by=owned_by)
-        content = build_content_lines(Challenge=challenge_desc, Include=include_units, Bias=bias_kw, Exclude=exclude_kw, Owned=owned_by)
+        owned_display = f"{owned.mention} ({faction})" if owned else None
+        content = build_content_lines(Challenge=challenge_desc, Include=include_units, Bias=bias_kw, Exclude=exclude_kw, Owned=owned_display)
         await interaction.response.send_message(content=content, embed=embed, view=view)
 
     @app_commands.command(name="battle", description="Generate random armies for two players")

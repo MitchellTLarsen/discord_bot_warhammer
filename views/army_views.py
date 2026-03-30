@@ -85,7 +85,8 @@ class ArmyButtonView(discord.ui.View):
             view.reroll_button.label = f"Re-roll ({new_rerolls})" if new_rerolls > 0 else "No re-rolls left"
             view.reroll_button.disabled = new_rerolls <= 0
 
-            content = build_content_lines(Include=self.include_units, Bias=self.bias_keywords, Exclude=self.exclude_keywords, Owned=owned_by)
+            owned_display = f"{owned_by} ({faction})" if owned_by else None
+            content = build_content_lines(Include=self.include_units, Bias=self.bias_keywords, Exclude=self.exclude_keywords, Owned=owned_display)
             await interaction.response.edit_message(content=content, embed=embed, view=view)
         except Exception as e:
             log.error(f"Reroll error: {e}\n{traceback.format_exc()}")
