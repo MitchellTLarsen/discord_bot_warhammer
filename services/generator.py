@@ -91,7 +91,7 @@ def generate_army(
             valid_opts = [opt for opt in unit.options if opt.points <= available_points]
             if not valid_opts:
                 continue
-            chosen_opt = min(valid_opts, key=lambda o: o.points)
+            chosen_opt = random.choice(valid_opts)
             army.append(SelectedUnit(unit, chosen_opt))
             available_points -= chosen_opt.points
             unit_counts[unit.name] += 1
