@@ -107,6 +107,7 @@ class ArmyCog(commands.Cog):
     async def randomise(self, interaction: discord.Interaction, faction: str | None = None, points: int = 2000,
                        detachment: str | None = None, include: str | None = None, bias: str | None = None,
                        exclude: str | None = None, challenge: str | None = None):
+        faction_was_random = faction is None
         if faction is None:
             faction = random.choice(list(self.factions.keys()))
         elif faction not in self.factions:
@@ -137,7 +138,8 @@ class ArmyCog(commands.Cog):
             return await interaction.response.send_message("Could not generate a valid army with those options.", ephemeral=True)
 
         embed = format_army_embed(faction, self.factions[faction].url, army)
-        view = ArmyButtonView(self.bot, faction, points, detachment, army, bias_kw, exclude_kw, include_units)
+        view = ArmyButtonView(self.bot, faction, points, detachment, army, bias_kw, exclude_kw, include_units,
+                             faction_was_random=faction_was_random)
         content = build_content_lines(Challenge=challenge_desc, Include=include_units, Bias=bias_kw, Exclude=exclude_kw)
         await interaction.response.send_message(content=content, embed=embed, view=view)
 
@@ -167,6 +169,9 @@ class ArmyCog(commands.Cog):
             parse_csv(bias) or [], parse_csv(exclude) or [], challenge
         )
 
+        faction1_was_random = your_faction is None
+        faction2_was_random = opponent_faction is None
+
         faction_list = list(self.factions.keys())
         faction1 = your_faction or random.choice(faction_list)
         available_for_p2 = [f for f in faction_list if f != faction1] if not opponent_faction else faction_list
@@ -188,7 +193,8 @@ class ArmyCog(commands.Cog):
         embed2 = format_army_embed(faction2, self.factions[faction2].url, army2)
 
         view = BattleButtonView(self.bot, interaction.user, opponent, faction1, faction2, army1, army2,
-                               points, your_detachment, opponent_detachment, bias_kw, exclude_kw, challenge_desc)
+                               points, your_detachment, opponent_detachment, bias_kw, exclude_kw, challenge_desc,
+                               faction1_was_random=faction1_was_random, faction2_was_random=faction2_was_random)
         await interaction.response.send_message(view._build_content(), embeds=[embed1, embed2], view=view)
 
     @app_commands.command(name="factions", description="List all available factions")
