@@ -109,6 +109,7 @@ class ArmyCog(commands.Cog):
     async def randomise(self, interaction: discord.Interaction, faction: str | None = None, points: int = 2000,
                        detachment: str | None = None, include: str | None = None, bias: str | None = None,
                        exclude: str | None = None, challenge: str | None = None, owned: discord.Member | None = None):
+        await interaction.response.defer()
         faction_was_random = faction is None
 
         # Get player collection info if owned user is specified
@@ -122,25 +123,25 @@ class ArmyCog(commands.Cog):
                 # Filter to factions that exist in the bot
                 valid_factions = [f for f in player_factions if f in self.factions]
                 if not valid_factions:
-                    return await interaction.response.send_message(
+                    return await interaction.followup.send(
                         f"No collections found for '{owned_by}'.", ephemeral=True)
                 faction = random.choice(valid_factions)
 
         if faction is None:
             faction = random.choice(list(self.factions.keys()))
         elif faction not in self.factions:
-            return await interaction.response.send_message(f"Unknown faction: {faction}", ephemeral=True)
+            return await interaction.followup.send(f"Unknown faction: {faction}", ephemeral=True)
         if points != 2000:
-            return await interaction.response.send_message("Points must be 2000.", ephemeral=True)
+            return await interaction.followup.send("Points must be 2000.", ephemeral=True)
         if not self._validate_detachment(faction, detachment):
             det_list = "\n".join(f"- {d.name}" for d in self.factions[faction].detachments)
-            return await interaction.response.send_message(f"Unknown detachment: {detachment}\n\n**Available:**\n{det_list}", ephemeral=True)
+            return await interaction.followup.send(f"Unknown detachment: {detachment}\n\n**Available:**\n{det_list}", ephemeral=True)
 
         # Get the collection for the selected faction
         if owned:
             collection = get_player_collection(owned_by, faction)
             if collection is None:
-                return await interaction.response.send_message(
+                return await interaction.followup.send(
                     f"No collection found for '{owned_by}' with faction '{faction}'.", ephemeral=True)
 
         include_units = parse_csv(include)
@@ -152,7 +153,7 @@ class ArmyCog(commands.Cog):
             army = generate_army(self.factions[faction], points, detachment, bias_kw, exclude_kw, include_units, faction, collection)
         except Exception as e:
             log.error(f"Army generation error: {e}\n{traceback.format_exc()}")
-            return await interaction.response.send_message("Failed to generate army. Please try again.", ephemeral=True)
+            return await interaction.followup.send("Failed to generate army. Please try again.", ephemeral=True)
 
         if extra_rules and army.units:
             if "max_unit_points" in extra_rules:
@@ -160,14 +161,14 @@ class ArmyCog(commands.Cog):
                 army.units = [u for u in army.units if u.option.points <= max_pts]
 
         if not army.units:
-            return await interaction.response.send_message("Could not generate a valid army with those options.", ephemeral=True)
+            return await interaction.followup.send("Could not generate a valid army with those options.", ephemeral=True)
 
         embed = format_army_embed(faction, self.factions[faction].url, army)
         view = ArmyButtonView(self.bot, faction, points, detachment, army, bias_kw, exclude_kw, include_units,
                              faction_was_random=faction_was_random, collection=collection, owned_by=owned_by)
         owned_display = f"{owned.mention} ({faction})" if owned else None
         content = build_content_lines(Challenge=challenge_desc, Include=include_units, Bias=bias_kw, Exclude=exclude_kw, Owned=owned_display)
-        await interaction.response.send_message(content=content, embed=embed, view=view)
+        await interaction.followup.send(content=content, embed=embed, view=view)
 
     @app_commands.command(name="battle", description="Generate random armies for two players")
     @app_commands.describe(
@@ -185,14 +186,15 @@ class ArmyCog(commands.Cog):
                             opponent_faction: str | None = None, opponent_detachment: str | None = None,
                             bias: str | None = None, exclude: str | None = None, challenge: str | None = None,
                             your_owned: discord.Member | None = None, opponent_owned: discord.Member | None = None):
+        await interaction.response.defer()
         if opponent.bot:
-            return await interaction.response.send_message("Can't battle a bot!", ephemeral=True)
+            return await interaction.followup.send("Can't battle a bot!", ephemeral=True)
         if opponent.id == interaction.user.id:
-            return await interaction.response.send_message("Can't battle yourself!", ephemeral=True)
+            return await interaction.followup.send("Can't battle yourself!", ephemeral=True)
 
         for f in (your_faction, opponent_faction):
             if f and f not in self.factions:
-                return await interaction.response.send_message(f"Unknown faction: {f}", ephemeral=True)
+                return await interaction.followup.send(f"Unknown faction: {f}", ephemeral=True)
 
         bias_kw, exclude_kw, challenge_desc, _ = self._apply_challenge(
             parse_csv(bias) or [], parse_csv(exclude) or [], challenge
@@ -214,7 +216,7 @@ class ArmyCog(commands.Cog):
         elif your_owned:
             player1_factions = [f for f in get_player_factions(owned_by1) if f in self.factions]
             if not player1_factions:
-                return await interaction.response.send_message(
+                return await interaction.followup.send(
                     f"No collections found for '{owned_by1}'.", ephemeral=True)
             faction1 = random.choice(player1_factions)
         else:
@@ -229,7 +231,7 @@ class ArmyCog(commands.Cog):
                 # Try without excluding faction1
                 player2_factions = [f for f in get_player_factions(owned_by2) if f in self.factions]
             if not player2_factions:
-                return await interaction.response.send_message(
+                return await interaction.followup.send(
                     f"No collections found for '{owned_by2}'.", ephemeral=True)
             faction2 = random.choice(player2_factions)
         else:
@@ -237,9 +239,9 @@ class ArmyCog(commands.Cog):
             faction2 = random.choice(available_for_p2)
 
         if not self._validate_detachment(faction1, your_detachment):
-            return await interaction.response.send_message(f"Unknown detachment for {faction1}: {your_detachment}", ephemeral=True)
+            return await interaction.followup.send(f"Unknown detachment for {faction1}: {your_detachment}", ephemeral=True)
         if not self._validate_detachment(faction2, opponent_detachment):
-            return await interaction.response.send_message(f"Unknown detachment for {faction2}: {opponent_detachment}", ephemeral=True)
+            return await interaction.followup.send(f"Unknown detachment for {faction2}: {opponent_detachment}", ephemeral=True)
 
         # Get player collections for the selected factions
         collection1 = None
@@ -247,12 +249,12 @@ class ArmyCog(commands.Cog):
         if your_owned:
             collection1 = get_player_collection(owned_by1, faction1)
             if collection1 is None:
-                return await interaction.response.send_message(
+                return await interaction.followup.send(
                     f"No collection found for '{owned_by1}' with faction '{faction1}'.", ephemeral=True)
         if opponent_owned:
             collection2 = get_player_collection(owned_by2, faction2)
             if collection2 is None:
-                return await interaction.response.send_message(
+                return await interaction.followup.send(
                     f"No collection found for '{owned_by2}' with faction '{faction2}'.", ephemeral=True)
 
         try:
@@ -260,7 +262,7 @@ class ArmyCog(commands.Cog):
             army2 = generate_army(self.factions[faction2], points, opponent_detachment, bias_kw, exclude_kw, None, faction2, collection2)
         except Exception as e:
             log.error(f"Battle generation error: {e}")
-            return await interaction.response.send_message("Failed to generate armies. Try again.", ephemeral=True)
+            return await interaction.followup.send("Failed to generate armies. Try again.", ephemeral=True)
 
         embed1 = format_army_embed(faction1, self.factions[faction1].url, army1)
         embed2 = format_army_embed(faction2, self.factions[faction2].url, army2)
@@ -270,7 +272,7 @@ class ArmyCog(commands.Cog):
                                faction1_was_random=faction1_was_random, faction2_was_random=faction2_was_random,
                                collection1=collection1, collection2=collection2,
                                owned_by1=owned_by1, owned_by2=owned_by2)
-        await interaction.response.send_message(view._build_content(), embeds=[embed1, embed2], view=view)
+        await interaction.followup.send(view._build_content(), embeds=[embed1, embed2], view=view)
 
     @app_commands.command(name="factions", description="List all available factions")
     async def factions_command(self, interaction: discord.Interaction):
